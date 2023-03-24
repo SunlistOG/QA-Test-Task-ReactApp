@@ -1,0 +1,186 @@
+﻿S.NO.,Key,Title,Description,Pre-condition,BDDKeyword,Steps,Data,Expected Result,Folder,Requirements,Owner,Priority,Status,Type,Release,Component,Estimated Effort(in mins),Tags,Automation Status,Automation Owner,Automation Key
+1,SQTTV-TC-1,The registration of user on the website with the valid data,The registration of user on the website with the valid data,"
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,Fill in all required fields with the valid data.,"Full Name: Piter Parker
+Email: test9106.user@gmail.com (Link: mailto:test9106.user@gmail.com ) 
+Password: Test@58372$$
+Confirm Password: Test@58372$$","All fields are filled in (The ""Password"" fields are masked by dots).",Sign Up cases,,Test User,High,Published,Functional,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was registered on site and was redirected to the ""Compare"" page.",,,,,,,,,,,,,
+2,SQTTV-TC-2,The registration of user on the website with the invalid data,The registration of user on the site with the invalid data,"
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the ""Email Address"" field with the invalid data",invalid email: poziloymaster@gmailcom,"No validation message, email is accepted (validation on the backend side)",Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in the other field with the valid data,"Full Name: Tom Holland
+Password: djkR(#$%$#22k3
+Confirm password: djkR(#$%$#22k3","All fields are filled in (the ""Password"" fields are masked by dots)",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"The validation message about the invalid email is displayed on the ""Sign Up"" page",,,,,,,,,,,,,
+3,SQTTV-TC-3,"The checking of the ""Full Name"" field with the valid data","The validation checking of the ""Full Name"" field with the valid data","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the valid full name in the ""Full Name"" field.",email: sunlist.og@outlook.com,Email is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill other fields with valid data.,"Full Name: Rob Garfild
+Password: Gar495@ggwp
+Confirm Password: Gar495@ggwp","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was registered on site and was redirected to the ""Compare"" page.",,,,,,,,,,,,,
+4,SQTTV-TC-4,"The checking of the ""Full Name"" field with invalid data: numbers","The validation checking of the ""Full Name"" field with invalid data: numbers + check if validation message is shown","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the invalid full name in the ""Full Name"" field.",59282727,The numbers are accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill other fields with valid data.,"Email: test.user2948@yahoo.com
+Password: Gar495@ggwp1
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was not registered on site and was not redirected to the ""Compare"" page, no validation message.",,,,,,,,,,,,,
+5,SQTTV-TC-5,"The checking of the ""Full Name"" field with invalid data: whitespaces and spaces","The validation checking of the ""Full Name"" field with invalid data: whitespaces and spaces + check if validation message is shown","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the valid infull name in the ""Full Name"" field.","     test              USER              Name",The whitespaces and spaces are accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill other fields with valid data.,"Email: test.user2948@yahoo.com (Link: mailto:test.user2948@yahoo.com ) 
+Password: Gar495@ggwp1
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was not registered on site and was not redirected to the ""Compare"" page, no validation message.",,,,,,,,,,,,,
+6,SQTTV-TC-6,"The checking of the ""Full Name"" field with invalid data: special characters","The validation checking of the ""Full Name"" field with invalid data: special characters + check if validation message is shown","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the invalid full name in the ""Full Name"" field.",@_$)$)_)*%@*%&^_)^)&!(*@(^)_+-+?><,The special characters are accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill other fields with valid data.,"Email: test.user2978@yahoo.com (Link: mailto:test.user2948@yahoo.com ) 
+Password: Gar495@ggwp1
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was not registered on site and was not redirected to the ""Compare"" page, no validation message.",,,,,,,,,,,,,
+7,SQTTV-TC-7,"The checking of the ""Full Name"" field with invalid data: limitation for a max of allowed symbols","The validation checking of the ""Full Name"" field with invalid data: limitation for a max of allowed symbols + check if validation message is shown","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the invalid full name in the ""Full Name"" field.","lrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54 K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y ggggtgrttrtrtrlrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfEFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y ggggtgrttrtrtrlrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj0"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gglrtjrjefjkfnfddffnnsAdjgngfre09retj54jkw4lewfmds,mdfsdv iodvidfovoi oicc io oi io ofdioigdsfioq2320320"""":{}||}FIJFUFNI #))(F)EFW FNJJ K kfnfdkfkjr9494efjfnv vfnmjkjkb j jkj kjk kj kj jk kjcvkfndk gere jg jkb ge tht h ewg g4 t4 64 7 $ $r kj$k$j k$j $f jk kj kj kjkjhjhKHUKHKHFnfgjffkrn6 y gg","No limitation for max length of symbols, and field is accepted it.",Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill other fields with valid data.,"Email: test.user2948@yahoo.com (Link: mailto:test.user2948@yahoo.com ) 
+Password: Gar495@ggwp1
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was not registered on site and was not redirected to the ""Compare"" page, no validation message.",,,,,,,,,,,,,
+8,SQTTV-TC-8,"The checking of the ""Email Address"" field with valid data: format check","Format check: Check if the email address is in a valid format. An email address should contain an ""@"" symbol, a domain name and a top-level domain.","The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+The user is not registered on site.",,"Fill in the valid email in the ""Email Address"" field.",test6776@gmail.com,The email is accepted in field.,Sign Up cases,,Test User,High,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Tomas Kan
+Password: Gar495@ggwp1
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was registered on site and was redirected to the ""Compare"" page, no validation message.",,,,,,,,,,,,,
+9,SQTTV-TC-9,"The checking of the ""Email Address"" field with invalid data: format check","Format check: Check if the email address is in a valid format. An email address should contain an ""@"" symbol, a domain name and a top-level domain.","The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+The user is not registered on site.",,"Fill in the invalid email address in the ""Email Address"" field.",testuser@gmailcom,The email is accepted in field.,Sign Up cases,,Test User,High,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Kate Letmd
+Password: Gar495@ggwp1
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was not registered on site and was not redirected to the ""Compare"" page.",,,,,,,,,,,,,
+10,SQTTV-TC-10,"The checking of the ""Email Address"" field with invalid data: length check",Length check: Check if the length of the email address is within the acceptable range. Most email addresses have a maximum length of 254 characters.,"The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+The user is not registered on site.",,"Fill in the invalid email address in the ""Email Address"" field.",test3o33rjoiefskdjldskldsklkdsfjgkgsdjdfrer4worjwlnkrkfselkfestest3o33rjoiefskdjldskldsklkdsfjgkgsdjdfrer4worjwlnkrkfselkfestest3o33rjoiefskdjldskldsklkdsfjgkgsdjdfrer4wokkkkkkkkkkkkkkkkkkkkkkkkkkkkkrjwlnkrkfselkfestest3o33rjoiefskdjldskldsklkdsfjgkgsdjdfrer4worjwlnkrkfselkfestest3o33rjoiefskdjldskldsklkdsfjgkgsdjdftest3o33rjoiefskdjldskldsklkdsfjgkgsdjdfrer4worjwlnkrkfselkfestest3o33rjoiefskdjldskldsklkdsfjgkgsdjdfrer4worjwlnkrkfselkfes@gmail.com,The email is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Kate Letmd
+Password: Gar495@ggwp1
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was not registered on site and was not redirected to the ""Compare"" page.",,,,,,,,,,,,,
+11,SQTTV-TC-11,"The checking of the ""Email Address"" field with valid data: length check",Length check: Check if the length of the email address is within the acceptable range. Most email addresses have a maximum length of 254 characters.,"The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+The user is not registered on site.",,"Fill in the valid email address in the ""Email Address"" field.",hello.thisismy.kingmister.junior.qualityassurance.engineer2030@outlook.com,The email is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Kate Letmd
+Password: Gar495@ggwp1
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was registered on site and was redirected to the ""Compare"" page.",,,,,,,,,,,,,
+12,SQTTV-TC-16,"The checking of the ""Email Address"" field: email registered (used) by another user","The validation checking of the ""Email Address"" field: email registered (used) by another user","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,Fill in the email address that used by another user.,sunlist.og@gmail.com,The email is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Nathan Yoan
+Password: Gar495@ggwp1
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was not registered on site and was not redirected to the ""Compare"" page, validation message is shown.",,,,,,,,,,,,,
+13,SQTTV-TC-17,"The checking of the ""Password"" field with valid data","The checking of the ""Password"" field with valid data","The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+The user is not registered on site.",,"Fill in the valid password in the ""Password"" field.",Password: Gar495@ggwp1,The password is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Otto Ken
+Email: test.yuser2948@yahoo.com (Link: mailto:test.user2948@yahoo.com ) 
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was registered on site and was redirected to the ""Compare"" page.",,,,,,,,,,,,,
+14,SQTTV-TC-18,"The checking of the ""Password"" field with invalid data","The checking of the ""Password"" field with invalid data","The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+The user is not registered on site.",,"Fill in the invalid password in the ""Password"" field.",Password: -,The password is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Otto Ken
+Email: test.yuser29948@yahoo.com (Link: mailto:test.yuser2948@yahoo.com ) 
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was not registered on site and was not redirected to the ""Compare"" page, validation message is displayed.",,,,,,,,,,,,,
+15,SQTTV-TC-19,"The checking of the ""Password"" field: length check less than 6 digits",Length check: Check if the password is of a sufficient length,"
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the password less than 6 digits in the ""Password"" field.",Password: 12345,The password is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Otto Ken
+Email: test.yuser29948@yahoo.com (Link: mailto:test.yuser2948@yahoo.com ) 
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was not registered on site and was not redirected to the ""Compare"" page, validation message is displayed.",,,,,,,,,,,,,
+16,SQTTV-TC-20,"The checking of the ""Password"" field: length check that 6 and more digits",Length check: Check if the password is of a sufficient length,"
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the password in 6 digits and more in the ""Password"" field.",Password: 1234567,The password is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Otto Ken
+Email: test.yuser29948@yahoo.com (Link: mailto:test.yuser2948@yahoo.com ) 
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User  was registered on site and was redirected to the ""Compare"" page.",,,,,,,,,,,,,
+17,SQTTV-TC-21,"The checking of the ""Password"" and ""Confirm Password"" field: match check",Check if the password and confirm password fields match. This ensures that the user has entered the same password in both fields.,"
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the valid password in the ""Password"" field.",Password: Gar495@ggwp1,The password is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,"Fill in the valid password in the ""Confirm Password"" field.",Password: Gar495@ggwp1,The password is accepted in field.,,,,,,,,,,,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Otto Ken
+Email: test.yuser2948@yahoo.com (Link: mailto:test.user2948@yahoo.com ) ","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was registered on site and was redirected to the ""Compare"" page.",,,,,,,,,,,,,
+18,SQTTV-TC-23,"The checking of the ""Confirm Password"" field with valid data","The checking of the ""Confirm Password"" field with valid data","The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+The user is not registered on site.",,"Fill in the valid password in the ""Confirm Password"" field.",Password: Gar495@ggwp1,The password is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Otto Ken
+Email: test.yuser2948@yahoo.com (Link: mailto:test.user2948@yahoo.com ) 
+Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was registered on site and was redirected to the ""Compare"" page.",,,,,,,,,,,,,
+19,SQTTV-TC-24,"The checking of the ""Confirm Password"" field with invalid data","The checking of the ""Confirm Password"" field with invalid data","The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+The user is not registered on site.",,"Fill in the invalid password in the ""Confirm Password"" field.",Password: Gar495@ggwp1,The password is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Otto Ken
+Email: test.yuser2948@yahoo.com (Link: mailto:test.user2948@yahoo.com ) 
+Password: Bar495@8999","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"User was not registered on site and was not redirected to the ""Compare"" page. Also, validation message is shown.",,,,,,,,,,,,,
+20,SQTTV-TC-29,The checking of the validation message: wrong email,"""The email address is badly formatted."" - message for checking","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the ""Email Address"" field with the invalid data",invalid email: poziloymaster@gmailcom,"No validation message, email is accepted (validation on the backend side)",Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in the other field with the valid data,"Full Name: Tom Holland
+Password: djkR(#$%$#22k3
+Confirm password: djkR(#$%$#22k3","All fields are filled in (the ""Password"" fields are masked by dots)",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"The ""The email address is badly formatted.""
+validation message about the invalid email is displayed on the ""Sign Up"" page
+
+",,,,,,,,,,,,,
+21,SQTTV-TC-30,The checking of the validation message: wrong email and password,"""There is no user record corresponding to this identifier. The user may have been deleted."" - message for checking","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the ""Email Address"", ""Password"" fields with the invalid data","invalid email: poziloymaster@gmailcom
+
+Invalid password: ggwp","No validation message, email&password is accepted (validation on the backend side)",Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in the other field with the valid data,"Full Name: Tom Holland
+Password: djkR(#$%$#22k3
+Confirm password: djkR(#$%$#22k3","All fields are filled in (the ""Password"" fields are masked by dots)",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"The ""There is no user record corresponding to this identifier. The user may have been deleted.""
+validation message about the invalid email & password is displayed on the ""Sign Up"" page",,,,,,,,,,,,,
+22,SQTTV-TC-31,The checking of the validation message: valid email and invalid password,"""The password is invalid or the user does not have a password."" - message for checking","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the ""Email Address"" field with the valid data",Valid email: test@gmail.com,Email is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,"Fill in the ""Password"" field with the invalid data",Valid password: 1234567 (invalid for this account),Password is accepted in field.,,,,,,,,,,,,,
+,,,,,,Fill in the other field with the valid data,"Full Name: Rob Barkley
+
+Confirm password: 1234567","The password is invalid or the user does not have a password. ",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"The ""The password is invalid or the user does not have a password.""
+validation message about the invalid email & password is displayed on the ""Sign Up"" page",,,,,,,,,,,,,
+23,SQTTV-TC-32,The checking of the validation message: network issue,"""A network error (such as timeout, interrupted connection or unreachable host) has occurred."" - message for checking","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,Fill in the all field with the valid data,"Full Name: Tom Holland
+
+Email: test9754@gmail.com (Link: mailto:test9754@gmail.com ) 
+
+Password: djkR(#$%$#22k3
+
+Confirm password: djkR(#$%$#22k3","Data is accepted in fields, no issues.",Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,"Make a network issue, for example in ""Network"" (Dev Tools) use throttling  select the ""2G"" network (slow internet) and try to connect.  ",,2G network (slow mode) is opened.,,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"The ""A network error (such as timeout, interrupted connection or unreachable host) has occurred.""
+validation message about the invalid email is displayed on the ""Sign Up"" page",,,,,,,,,,,,,
+24,SQTTV-TC-33,"The checking of the validation message: email, that used another user","""The email address is already in use by another account."" - message for checking","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,Fill in the email address that used by another user.,sunlist.og@gmail.com,The email is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Nathan Yoan
+Password: Gar495@ggwp1
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN IN"" button.",,"The ""The email address is already in use by another account.""
+validation message about the invalid email is displayed on the ""Sign In"" page",,,,,,,,,,,,,
+25,SQTTV-TC-34,The checking of the validation message: small password,"""Password should be at least 6 characters."" - message for checking","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Fill in the password less than 6 digits in the ""Password"" field.",Password: 12345,The password is accepted in field.,Sign Up cases,,Test User,Medium,Published,Functional,,,,registration,,,
+,,,,,,Fill in all required fields with the valid data.,"Full Name: Otto Ken
+Email: test.yuser29948@yahoo.com (Link: mailto:test.yuser2948@yahoo.com ) 
+Confirm Password: Gar495@ggwp1","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN UP"" button.",,"The ""Password should be at least 6 characters.""
+validation message about the invalid email is displayed on the ""Sign Up"" page",,,,,,,,,,,,,
+26,SQTTV-TC-37,"The checking of the ""Sign In"" link: redirection check","The checking of the ""Sign In"" link: redirection check","
+1. The registration page was opened on the site: http://localhost:3000/sign-up (Link: http://localhost:3000/sign-up ) 
+2. The user is not registered on site.",,"Click on the ""Already have an account? Sign in"" link.",,"""Sign In"" page was opened.",Sign Up cases,,Test User,Medium,Published,Functional,,,,"login ,registration",,,

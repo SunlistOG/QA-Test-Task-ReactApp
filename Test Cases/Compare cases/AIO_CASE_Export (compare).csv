@@ -1,0 +1,18 @@
+﻿S.NO.,Key,Title,Description,Pre-condition,BDDKeyword,Steps,Data,Expected Result,Folder,Requirements,Owner,Priority,Status,Type,Release,Component,Estimated Effort(in mins),Tags,Automation Status,Automation Owner,Automation Key
+1,SQTTV-TC-61,The checking of the sign out: redirection to page,"The checking of the sign out: redirection to page via ""SIGN OUT"" button on the ""Compare"" page","
+1. The user is authorized on site.
+2. The registration page was opened on the site: http://localhost:3000/compare (Link: http://localhost:3000/compare ) ",,"Click on the ""SIGN OUT"" button in header.",,"The ""Sign In"" page is shown, user made a logout.",Compare cases,,Test User,High,Published,Functional,,,,logout,,,
+2,SQTTV-TC-66,The checking of the show all elements in table,The checking of the show all elements in table,"
+1. The user is authorized on site.
+2. The registration page was opened on the site: http://localhost:3000/compare (Link: http://localhost:3000/compare ) 
+3. The comparison table is shown with 4 columns of all available phone characteristics.",,"Click for all 4 ""COMPARE"" buttons. ",,"The 4 ""REMOVE"" buttons are shown and table with phone data is shown too.",Compare cases,,Test User,Medium,Published,Functional,,,,compare,,,
+3,SQTTV-TC-67,The checking of the hide all elements in the table,The checking of the hide all elements in the table,"
+1. The user is authorized on site.
+2. The registration page was opened on the site: http://localhost:3000/compare (Link: http://localhost:3000/compare ) 
+3. The comparison table is shown with 3 columns of all available phone characteristics.",,"Click for all 4 ""REMOVE"" buttons. ",,"The 4 ""COMPARE"" buttons are shown and table with phone data is hidden now.",Compare cases,,Test User,Medium,Published,Functional,,,,compare,,,
+4,SQTTV-TC-68,The checking of the display 4 cards with phone model data,The checking of the display 4 cards with phone model data,"
+1. The user is authorized on site.
+2. The registration page was opened on the site: http://localhost:3000/compare (Link: http://localhost:3000/compare ) 
+",,See the 4 phone images.,,All 4 images are displayed in card view.,Compare cases,,Test User,Medium,Published,Functional,,,,compare,,,
+,,,,,,See the phone model name.,,All 4 model names are shown in card view.,,,,,,,,,,,,,
+,,,,,,"See the price (x - y),  it's template from x to y.",,All prices are shown too in card view.,,,,,,,,,,,,,

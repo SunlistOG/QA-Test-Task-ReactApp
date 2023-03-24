@@ -1,0 +1,50 @@
+﻿S.NO.,Key,Title,Description,Pre-condition,BDDKeyword,Steps,Data,Expected Result,Folder,Requirements,Owner,Priority,Status,Type,Release,Component,Estimated Effort(in mins),Tags,Automation Status,Automation Owner,Automation Key
+1,SQTTV-TC-38,The authorization of user on the website with the valid data,The authorization of user on the website with the valid data,"
+1. The user is registered previously on the site.
+2. The authorization page is opened on the site: http://localhost:3000/sign-in (Link: http://localhost:3000/sign-in ) ",,"Fill in the ""Email"" field with the valid data.","email: sunlist.og@outlook.com (Link: mailto:sunlist.og@outlook.com ) ","The ""Email"" field is displayed as",Sign In cases,,Test User,High,Published,Functional,,,,"login ",,,
+,,,,,,"Fill in the ""Password"" field with the valid data.",password: helloBro485!10(5),"The ""Password"" field is displayed as the marked dots.",,,,,,,,,,,,,
+,,,,,,"Click on the ""Login"" button.",,"The authorization is successful. the user is redirected to the ""Compare"" page.",,,,,,,,,,,,,
+2,SQTTV-TC-39,The authorization of user on the website with the invalid data,The authorization of user on the website with the invalid data,"
+1. The user is registered previously on the site.
+2. The authorization page is opened on the site: http://localhost:3000/sign-in (Link: http://localhost:3000/sign-in ) ",,"Fill in the ""Email"" field with the invalid data.",email: geakio.gmail.com,"The ""Email"" field is displayed as filled.",Sign In cases,,Test User,High,Published,Functional,,,,"login ",,,
+,,,,,,"Fill in the ""Password"" field with the valid data.",password: test#fmgn12,"The ""Password"" field is displayed as the marked dots.",,,,,,,,,,,,,
+,,,,,,"Click on the ""Login"" button.",,"The authorization is failed, the user is cannot redirected to the ""Compare"" page. The user sees the validation messages.",,,,,,,,,,,,,
+3,SQTTV-TC-40,"The checking of the ""Email Address"" field with valid data: format check","The checking of the ""Email Address"" field with valid data: format check","
+1. The user is registered previously on the site.
+2. The authorization page is opened on the site: http://localhost:3000/sign-in (Link: http://localhost:3000/sign-in ) ",,"Fill in the valid email in the ""Email Address"" field.",test6776@gmail.com,The email is accepted in field.,Sign In cases,,Test User,Medium,Published,Functional,,,,"login ",,,
+,,,,,,Fill in all required fields with the valid data.,"Password: Gar495@ggwp1
+","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN IN"" button.",,"User was authorized on site and was redirected to the ""Compare"" page.",,,,,,,,,,,,,
+4,SQTTV-TC-41,"The checking of the ""Email Address"" field with invalid data: format check","The checking of the ""Email Address"" field with invalid data: format check","
+1. The user is registered previously on the site.
+2. The authorization page is opened on the site: http://localhost:3000/sign-in (Link: http://localhost:3000/sign-in ) ",,"Fill in the invalid email address in the ""Email Address"" field.",testuser@gmailcom,The email is accepted in field.,Sign In cases,,Test User,Medium,Published,Functional,,,,"login ",,,
+,,,,,,Fill in all required fields with the valid data.,Password: Gar495@ggwp1,"All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN IN"" button.",,"User was authorized on site and was redirected to the ""Compare"" page, no validation message.",,,,,,,,,,,,,
+5,SQTTV-TC-42,"The checking of the ""Email Address"" field with valid data: length check","The checking of the ""Email Address"" field with valid data: length check","
+1. The user is registered previously on the site.
+2. The authorization page is opened on the site: http://localhost:3000/sign-in (Link: http://localhost:3000/sign-in ) ",,"Fill in the valid email address in the ""Email Address"" field.",hello.thisismy.kingmister.junior.qualityassurance.engineer2030@outlook.com,The email is accepted in field.,Sign In cases,,Test User,Medium,Published,Functional,,,,"login ",,,
+,,,,,,Fill in all required fields with the valid data.,Password: Gar495@ggwp1,"The ""Password"" field is masked by dots.",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN IN"" button.",,"User was authorized on site and was redirected to the ""Compare"" page.",,,,,,,,,,,,,
+6,SQTTV-TC-43,"The checking of the ""Email Address"" field with invalid data: length check","The checking of the ""Email Address"" field with invalid data: length check","
+1. The user is registered previously on the site.
+2. The authorization page is opened on the site: http://localhost:3000/sign-in (Link: http://localhost:3000/sign-in ) ",,"Fill in the invalid email address in the ""Email Address"" field.",test3o33rjoiefskdjldskldsklkdsfjgkgsdjdfrer4worjwlnkrkfselkfestest3o33rjoiefskdjldskldsklkdsfjgkgsdjdfrer4worjwlnkrkfselkfestest3o33rjoiefskdjldskldsklkdsfjgkgsdjdfrer4wokkkkkkkkkkkkkkkkkkkkkkkkkkkkkrjwlnkrkfselkfestest3o33rjoiefskdjldskldsklkdsfjgkgsdjdfrer4worjwlnkrkfselkfestest3o33rjoiefskdjldskldsklkdsfjgkgsdjdftest3o33rjoiefskdjldskldsklkdsfjgkgsdjdfrer4worjwlnkrkfselkfestest3o33rjoiefskdjldskldsklkdsfjgkgsdjdfrer4worjwlnkrkfselkfes@gmail.com,The email is accepted in field.,Sign In cases,,Test User,Medium,Published,Functional,,,,"login ",,,
+,,,,,,Fill in all required fields with the valid data.,Password: Gar495@ggwp1,"The ""Password"" field is masked by dots.",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN IN"" button.",,"User was authorized on site and was redirected to the ""Compare"" page.",,,,,,,,,,,,,
+7,SQTTV-TC-49,"The checking of the ""Password"" field: length check that 6 and more digits","The checking of the ""Password"" field: length check that 6 and more digits","
+1. The user is registered previously on the site.
+2. The authorization page is opened on the site: http://localhost:3000/sign-in (Link: http://localhost:3000/sign-in ) ",,"Fill in the password in 6 digits and more in the ""Password"" field.",Password: 1234567,The password is accepted in field.,Sign In cases,,Test User,Medium,Published,Functional,,,,"login ",,,
+,,,,,,Fill in all required fields with the valid data.,"Email: test.yuser29948@yahoo.com (Link: mailto:test.yuser2948@yahoo.com ) ","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN IN"" button.",,"User was authorized on site and was redirected to the ""Compare"" page.",,,,,,,,,,,,,
+8,SQTTV-TC-50,"The checking of the ""Password"" field: length check less than 6 digits","The checking of the ""Password"" field: length check less than 6 digits","
+1. The user is registered previously on the site.
+2. The authorization page is opened on the site: http://localhost:3000/sign-in (Link: http://localhost:3000/sign-in ) ",,"Fill in the password that less than 6 digits in the ""Password"" field.",Password: 12345,The password is accepted in field.,Sign In cases,,Test User,Medium,Published,Functional,,,,"login ",,,
+,,,,,,Fill in all required fields with the valid data.,"Email: test.yuser29948@yahoo.com (Link: mailto:test.yuser29948@yahoo.com ) ","All fields are filled in (The ""Password"" fields are masked by dots).",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN IN"" button.",,"User was non-authorized on site and was not redirected to the ""Compare"" page, validation message is shown.",,,,,,,,,,,,,
+9,SQTTV-TC-51,"The checking of the ""Password"" field with invalid data","The checking of the ""Password"" field with valid data","
+1. The user is registered previously on the site.
+2. The authorization page is opened on the site: http://localhost:3000/sign-in (Link: http://localhost:3000/sign-in ) ",,"Fill in the invalid password in the ""Password"" field.",Password: коктетвуиуи4 (wrong password for this account),The password is accepted in field.,Sign In cases,,Test User,Medium,Published,Functional,,,,"login ",,,
+,,,,,,Fill in all required fields with the valid data.,"Email: test.yuser29948@yahoo.com (Link: mailto:test.yuser29948@yahoo.com ) ","All fields are filled in. The ""Password"" field is masked by dots.",,,,,,,,,,,,,
+,,,,,,"Click the ""SIGN IN"" button.",,"User was not authorized on site and was not redirected to the ""Compare"" page, validation message is displayed.",,,,,,,,,,,,,
+10,SQTTV-TC-60,"The checking of the ""Sign Up"" link: redirection check","The checking of the ""Sign Up"" link: redirection to new page","
+1. The user is registered previously on the site.
+2. The authorization page is opened on the site: http://localhost:3000/sign-in (Link: http://localhost:3000/sign-in ) ",,"Click on the ""Don't have an account? Sign Up"" link.",,"The ""Sign Up"" page was opened.",Sign In cases,,Test User,Medium,Published,Functional,,,,"login ",,,
